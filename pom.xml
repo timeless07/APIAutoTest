@@ -23,7 +23,7 @@
 					</descriptorRefs>
 					<archive>
 						<manifest>                                 <!--注意，此处必须是main()方法对应类的完整路径  -->
-							<mainClass>src.test.com.sen.api.RunTestNG.RunTestNG</mainClass>
+							<mainClass>test.com.sen.api.RunTestNG</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
@@ -178,18 +178,8 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.9</version>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-api</artifactId>
-			<version>2.0-rc1</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-core</artifactId>
-			<version>2.0-rc1</version>
-			<scope>test</scope>
-		</dependency>
+
+
 		<!-- slf4j 依赖包 -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
