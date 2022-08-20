@@ -23,7 +23,7 @@
 					</descriptorRefs>
 					<archive>
 						<manifest>                                 <!--注意，此处必须是main()方法对应类的完整路径  -->
-							<mainClass>test.com.sen.api.RunTestNG</mainClass>
+							<mainClass>com.sen.api.RunTestNG</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
@@ -39,9 +39,10 @@
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
+					<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.12.4</version>
 				<configuration>
+					<skipTests>true</skipTests>
 					<suiteXmlFiles>
 						<suiteXmlFile>${xmlFileName}</suiteXmlFile>
 					</suiteXmlFiles>
@@ -52,6 +53,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.12.4</version>
 				<configuration>
+					<skipTests>true</skipTests>
 					<properties>
 						<property>
 							<name>usedefaultlisteners</name>
