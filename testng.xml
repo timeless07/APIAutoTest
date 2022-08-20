@@ -4,7 +4,7 @@
 		<parameter name="excelPath" value="case/api-data.xls"></parameter>
 		<parameter name="sheetName" value="Sheet1"></parameter>
 		<classes>
-			<class name="test.com.sen.api.ApiTest">
+			<class name="com.sen.api.ApiTest">
 				<methods>							
 					<include name="apiTest"></include>
 				</methods>

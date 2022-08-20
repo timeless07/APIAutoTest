@@ -13,7 +13,7 @@ public class RunTestNG {
         logger.info("开始执行");
         TestNG testNG = new TestNG();
         List<String> suites = new ArrayList<String>();
-        suites.add("src/resources/testng.xml");//需要调用的xml文件
+        suites.add("testng.xml");//需要调用的xml文件
         testNG.setTestSuites(suites);
         testNG.run();
         logger.info("执行完毕");
